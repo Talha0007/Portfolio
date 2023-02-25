@@ -61,13 +61,6 @@ const Sidebar = () => {
         >
           <FontAwesomeIcon icon={faBagShopping} color="#4d4d4e" />
         </NavLink>
-        {/* <FontAwesomeIcon
-          icon={faClose}
-          color="#ffd700"
-          size="3x"
-          className="close-icon"
-          onClick={() => setShowNav(false)}
-        /> */}
       </nav>
       <ul>
         <li>
