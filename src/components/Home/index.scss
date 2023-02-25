@@ -1,0 +1,223 @@
+.home-page {
+  .text-zone {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40%;
+    max-height: 90%;
+  }
+
+  h1 {
+    color: #fff;
+    font-size: 53px;
+    margin: 0;
+    font-family: 'Coolvetica';
+    font-weight: 400;
+
+    &::before {
+      content: '<h1>';
+      font-family: 'La Belle Aurore';
+      color: #ffd700;
+      font-size: 18px;
+      position: absolute;
+      margin-top: -40px;
+      left: 15px;
+      opacity: 0.6;
+    }
+
+    &::after {
+      content: '<h1/>';
+      font-family: 'La Belle Aurore';
+      color: #ffd700;
+      font-size: 18px;
+      position: absolute;
+      margin-top: 18px;
+      margin-left: 20px;
+      animation: fadeIn 1s 1.7s backwards;
+      opacity: 0.6;
+    }
+
+    // img {
+    //   width: 32px;
+    //   margin-left: 20px;
+    //   opacity: 0;
+    //   height: auto;
+    //   animation: rotateIn 1s linear both;
+    //   animation-delay: 1.4s;
+    // }
+  }
+
+  h2 {
+    color: #b7b7bf;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 11px;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    animation: fadeIn 1s 1.8s backwards;
+  }
+
+  .flat-button {
+    color: #ffd700;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 10px 18px;
+    border: 1px solid #ffd700;
+    margin-top: 25px;
+    float: left;
+    animation: fadeIn 1s 1.8s backwards;
+    white-space: nowrap;
+
+    &:hover {
+      background: #ffd700;
+      color: #333;
+      font-weight: bold;
+    }
+  }
+}
+
+.profile-container {
+  position: absolute;
+  top: 15%;
+  right: 15%;
+  bottom: 0;
+  left: auto;
+  margin: auto;
+
+  .profile-card {
+    width: 90%;
+    max-width: 440px;
+    color: #fff;
+    text-align: center;
+    padding: 50px 35px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(234, 229, 229, 0.5);
+    backdrop-filter: blur(5px);
+
+    img {
+      width: 150px;
+      border-radius: 50%;
+    }
+
+    .profile-image {
+      width: 150px;
+      height: 160px;
+    }
+
+    h2 {
+      font-size: 40px;
+      font-weight: 600;
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 10px auto;
+      max-width: 330px;
+    }
+
+    ul {
+      position: relative;
+      left: 25%;
+      width: 45%;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      list-style: none;
+      text-align: center;
+      margin: 0;
+
+      li {
+        a {
+          padding: 5px 0;
+          display: block;
+          font-size: 30px;
+          line-height: 16px;
+
+          &:hover svg {
+            color: #ffd700;
+          }
+        }
+      }
+    }
+  }
+}
+
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 300;
+  color: #ffd700;
+  padding: 10px 30px;
+  margin: 10px 0 10px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  border: 1px solid #ffd700;
+
+  &:hover {
+    color: black;
+    background-color: #ffd700;
+    font-weight: 300;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .tags,
+  .home-page h1::before,
+  r {
+    display: none;
+  }
+
+  .home-page {
+    .text-zone {
+      position: initial;
+      width: 100%;
+      transform: none;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .flat-button {
+      float: none;
+      display: block;
+      margin: 20px auto 0 auto;
+      width: 125px;
+    }
+
+    .logo-container {
+      position: relative;
+      width: 100%;
+      height: auto;
+      top: 50px;
+      right: 0;
+      box-sizing: border-box;
+      margin: auto;
+      left: 0;
+
+      svg {
+        position: absolute;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: 0;
+        margin: auto;
+      }
+    }
+
+    .profile-container {
+      position: relative;
+      width: 80%;
+      right: 5%;
+      margin-top: 30px;
+      margin-bottom: 50px;
+    }
+  }
+}

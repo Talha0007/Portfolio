@@ -1,0 +1,38 @@
+.portfolio-page {
+  .text-zone {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40%;
+    max-height: 90%;
+  }
+
+  .show-portfolio {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 30px;
+  }
+}
+
+.bold-content {
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 1200px) {
+  .portfolio-page {
+    .show-portfolio {
+      position: relative;
+      margin: auto;
+      top: 50px;
+    }
+  }
+}
